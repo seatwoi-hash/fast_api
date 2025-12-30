@@ -20,3 +20,18 @@ Pydantic - валидация и сериализация данных
 
 Python 3.7+ - язык программирования
 
+## Установка
+
+Клонируйте репозиторий или скопируйте код
+
+Установите зависимости:
+
+pip install fastapi uvicorn sqlite3
+
+Запустите сервер:
+
+uvicorn main:app --reload
+
+docker 
+
+docker run -d -p 8000:80 -v todo_data:/app/data atatarinov12/todo-service:latest
